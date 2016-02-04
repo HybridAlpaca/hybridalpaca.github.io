@@ -2,6 +2,6 @@
 ...
 such wow!  To run (theoretically), use:
 ```
-$npm install awesome
-$npm be --awesome
+$~ npm install awesome
+$~ npm be --awesome
 ```
