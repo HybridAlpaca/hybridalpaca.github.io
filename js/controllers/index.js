@@ -8,5 +8,9 @@ angular.module('blarg', []).controller('main', function($scope) {
         name: 'The Grove',
         url: '//grove-tramans.c9users.io',
         type: 'RPG'
+    }, {
+        name: 'Devteam Idle',
+        url: './devteam',
+        type: 'incremental, idle'
     }];
 });

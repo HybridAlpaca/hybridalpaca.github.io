@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app='devteam'>
+
+<head>
+    <title>DevTeam Idle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='../css/theme.css'>
+    <link rel='stylesheet' href='../css/animate.css'>
+    <link rel='icon' href='../img/d.png'>
+    <script src='../js/controllers/angular.js'></script>
+    <script src='../js/controllers/DOM.js'></script>
+</head>
+
+<body ng-controller='main'>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand animated rotateInDownLeft" href="#">
+                    Devteam Idle <span class='badge'>beta</span>
+                </a>
+            </div>
+            <div class='navbar-text navbar-right'>
+                <img src='../img/bell.png' width='30' class='animated tada' style='margin-top:-7px;margin-right:12.5px;'>
+            </div>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <ul class="list-group animated zoomInLeft" ng-repeat='opt in options'>
+                    <a class="list-group-item" href={{opt.url}}>{{opt.name}}</a>
+                </ul>
+            </div>
+            <div class='col-sm-8'>
+                <h1 ng-show='!games.length'>You don't appear to have made any games!</h1>
+                <div class='animated zoomInRight'>
+                    <div class='panel panel-default' ng-repeat='game in games'>
+                        <div class='panel-body'>
+                            <h4>{{game.name}}</h4></div>
+                        <div class='panel-footer'>{{game.rating}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
