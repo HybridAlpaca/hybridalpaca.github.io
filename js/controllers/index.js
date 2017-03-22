@@ -6,7 +6,7 @@ angular.module('blarg', []).controller('main', function($scope) {
         type: 'incremental'
     }, {
         name: 'The Grove',
-        url: '//grove-tramans.c9users.io',
+        url: '//grove-mmo.com',
         type: 'RPG'
     }, {
         name: 'Devteam Idle',
