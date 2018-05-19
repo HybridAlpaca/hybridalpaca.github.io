@@ -1,29 +1,9 @@
 <!doctype html>
-<html ng-app='blarg'>
-
+<html>
 <head>
-    <title>HybridAlpaca Game Studios</title>
-    <link rel='stylesheet' href='./bower_components/bootstrap/dist/css/bootstrap.min.css'>
-    <script src='./js/controllers/angular.js'></script>
-    <script src='./js/controllers/index.js'></script>
+	<title>HybridAlpaca</title>
 </head>
-
-<body ng-controller='main'>
-    <div class='container-fluid' style='margin-top:17px;'>
-        <div class='jumbotron' style='width:70%;'>
-            <h1>Hybrid Alpaca Game Studios</h1>
-            <p>Where the "best" web games are made! Upon the start of the HTML5 era and the downfall of flash, we decided to create our mark, by creating the best games using these technologies that you could play.</p>
-            <a class='btn btn-primary btn-lg' href='#'>Learn more</a>
-        </div>
-        <h1 class='page-header'>List of Games</h1>
-        <p>We have made multiple games in our development lifetime, including but not limited to:</p>
-        <ul ng-repeat='game in games'>
-            <li><a href={{game.url}}>{{game.name}}</a> <i>({{game.type}})</i></li>
-        </ul>
-    </div>
-    <script>
-        window.onerror = alert;
-    </script>
+<body>
+	<img src="./assets/icons/hybridalpaca-logo.png">
 </body>
-
 </html>
